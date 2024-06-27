@@ -2,6 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { MantineProvider, createTheme } from "@mantine/core";
 import '@mantine/core/styles.css';
+import Navbar from "./(main)/navbar/page";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +12,37 @@ export const metadata = {
 };
 
 const theme = createTheme({
-  /** Put your mantine theme override here */
+  headings: {
+    fontWeight: '400',
+    fontFamily: 'Manrope',  
+
+    sizes: {
+      h1: {
+        fontWeight: '400',
+        fontSize: '36px',
+        lineHeight: '1.4',
+        fontFamily: 'Sora',
+
+      },
+      h2: {
+        fontWeight: '400',
+        fontSize: '26px',
+        lineHeight: '1.4',
+      },
+      h3: {
+        fontWeight: '200',
+        fontSize: '16px',
+        lineHeight: '1.4',
+      },
+    },
+  },
+  fontSizes: {
+    xs: '36px',
+    sm: '12px',
+    md: '26px',
+    lg: '30px',
+    xl: '16px',
+  },
 });
 
 export default function RootLayout({ children }) {
@@ -19,6 +50,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
       <MantineProvider theme={theme} defaultColorScheme="dark">
+        <Navbar />
         {children}
         </MantineProvider>
       </body>
