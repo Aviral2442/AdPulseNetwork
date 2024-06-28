@@ -5,9 +5,11 @@ import Footer from './footer/page';
 const MainLayout = ({ children }) => {
     return (
         <>
-            <Navbar />
-            {children}
-            <Footer />
+            <div >
+                <Navbar />
+                {children}
+                <Footer />
+            </div>
         </>
     )
 }
