@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { MantineProvider, createTheme } from "@mantine/core";
+import { ColorSchemeScript, MantineProvider, createTheme } from "@mantine/core";
 import '@mantine/core/styles.css';
 
 const inter = Inter({ subsets: ["latin"] });
@@ -11,44 +11,16 @@ export const metadata = {
 };
 
 const theme = createTheme({
-  headings: {
-    fontWeight: '400',
-    fontFamily: 'Manrope',  
 
-    sizes: {
-      h1: {
-        fontWeight: '400',
-        fontSize: '36px',
-        lineHeight: '1.4',
-
-      },
-      h2: {
-        fontWeight: '400',
-        fontSize: '26px',
-        lineHeight: '1.4',
-      },
-      h3: {
-        fontWeight: '200',
-        fontSize: '16px',
-        lineHeight: '1.4',
-      },
-    },
-  },
-  fontSizes: {
-    xs: '36px',
-    sm: '12px',
-    md: '26px',
-    lg: '30px',
-    xl: '16px',
-  },
 });
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en"  data-mantine-color-scheme="light">
       <body className={inter.className}>
-      <MantineProvider theme={theme} defaultColorScheme="light">
-        {children}
+      <ColorSchemeScript forceColorScheme="light" />
+        <MantineProvider theme={theme} defaultColorScheme="light">
+          {children}
         </MantineProvider>
       </body>
     </html>
