@@ -1,6 +1,6 @@
 'use client'
 import React from 'react'
-import { Text, Container, ActionIcon, Group, rem } from "@mantine/core"
+import { Text, Container, ActionIcon, Group, rem, Paper, Anchor } from "@mantine/core"
 import {
   IconBrandTwitter,
   IconBrandYoutube,
@@ -47,7 +47,7 @@ const data = [
   }
 ]
 
-export function Footer ()  {
+export function Footer() {
   const groups = data.map(group => {
     const links = group.links.map((link, index) => (
       <Text
@@ -70,16 +70,60 @@ export function Footer ()  {
   })
 
   return (
-    <footer className={classes.footer}>
-      <Container className={classes.inner}>
-        {/* <div className={classes.logo}>
-          
-         
-        </div> */}
-        <div className={classes.groups}>{groups}</div>
-      </Container>
-     
-    </footer>
+    <>
+      <footer className={classes.footer}>
+        <Container className={classes.inner} fluid>
+          <div className={classes.groups}>{groups}</div>
+        </Container>
+        <Container className={classes.afterFooter} fluid>
+          <Paper shadow="xs" className={classes.afterFooterInner}>
+            <Text c="dimmed" size="sm">
+              ©Neuros 2024. All rights reserved.
+            </Text>
+            <Group gap={0}
+              className={classes.social}
+              justify="flex-end"
+              wrap="nowrap">
+              <Anchor href='#' c="dimmed" size="sm">
+                Terms of use
+              </Anchor>
+              <Anchor href='#' c="dimmed" size="sm">
+                Privacy
+              </Anchor>
+              <Anchor href='#' c="dimmed" size="sm">
+                Environmental Policy
+              </Anchor>
+            </Group>
+            {/* <Group
+              gap={0}
+              className={classes.social}
+              justify="flex-end"
+              wrap="nowrap"
+            >
+              <ActionIcon size="lg" color="gray" variant="subtle">
+                <IconBrandTwitter
+                  style={{ width: rem(18), height: rem(18) }}
+                  stroke={1.5}
+                />
+              </ActionIcon>
+              <ActionIcon size="lg" color="gray" variant="subtle">
+                <IconBrandYoutube
+                  style={{ width: rem(18), height: rem(18) }}
+                  stroke={1.5}
+                />
+              </ActionIcon>
+              <ActionIcon size="lg" color="gray" variant="subtle">
+                <IconBrandInstagram
+                  style={{ width: rem(18), height: rem(18) }}
+                  stroke={1.5}
+                />
+              </ActionIcon>
+            </Group> */}
+          </Paper>
+        </Container>
+
+      </footer>
+    </>
   );
 }
 
