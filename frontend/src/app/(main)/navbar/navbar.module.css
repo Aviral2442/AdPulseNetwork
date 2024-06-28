@@ -1,11 +1,24 @@
 .TopHeader{
     border-radius: 10px;
+    
 
     @media screen and (max-width: 768px){
         border-radius: 0px;
         width: 100%;
         margin: 5px;
     }
+  }
+
+  .TopHeaderDetails:hover{
+    color: #F14F44;
+  }
+
+  .socialIcons{
+    margin-top: 5px;
+    padding: 0 4px;
+  }
+  .socialIcons:hover{
+    color: #F14F44;
   }
   
   .header {
