@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import { Group, Button, UnstyledButton, Text, ThemeIcon, Divider, Box, Burger, Drawer, ScrollArea, rem, useMantineTheme, Card, Grid, Image, Menu } from "@mantine/core"
+import { Group, Button, UnstyledButton, Text, ThemeIcon, Divider, Box, Burger, Drawer, ScrollArea, rem, useMantineTheme, Card, Grid, Image, Menu, Anchor, Container } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
 import { IconNotification, IconCode, IconBook, IconChartPie3, IconFingerprint, IconCoin, IconCalendarMonth } from "@tabler/icons-react"
 import { Modal } from '@mantine/core';
@@ -75,33 +75,60 @@ const Navbar = () => {
   return (
     <>
       <TopHeader />
-      <Box pb={5} p={15}>
-        <header className={classes.header}>
-          <Group justify="space-around" h="100%">
-            <img src="logo.png" alt="Mantine logo" />
+      <Box pb={5} p={15}  >
+        <Container size="xl" bg={"#F0F2F4"} p={8} py={15} className={classes.MainHeader} >
+          <header className={classes.header}>
+            <Group justify="space-around" h="100%">
+              <img src="logo.png" alt="Mantine logo" />
 
-            <Group h="100%" gap={0} visibleFrom="sm">
-              <a href="#" className={classes.link}>
-                Home
-              </a>
-              <a href="#" className={classes.link}>
-                Advertiser
-              </a>
-              <a href="#" className={classes.link}>
-                Publisher
-              </a>
-              <a href="#" className={classes.link}>
-                Pricing Models
-              </a>
-              <a href="#" className={classes.link}>
-                Verticals
-              </a>
-            </Group>
+              <Group h="100%" gap={0} visibleFrom="sm">
+                <Anchor href="#" className={classes.link}>
+                  Home
+                </Anchor>
+                <Anchor href="#" className={classes.link}>
+                  Advertiser
+                </Anchor>
+                <Anchor href="#" className={classes.link}>
+                  Publisher
+                </Anchor>
+                <Anchor href="#" className={classes.link}>
+                  Pricing Models
+                </Anchor>
+                <Anchor href="#" className={classes.link}>
+                  Verticals
+                </Anchor>
+              </Group>
 
-            <Modal opened={opened} onClose={close} title="Advertiser and Publisher Login" size="lg" centered>
-              <Grid grow >
-                <Grid.Col span={6}>
-                  <Card
+              <Modal opened={opened} onClose={close} title="Advertiser and Publisher Login" size="lg" centered>
+                <Grid grow >
+                  <Grid.Col span={6}>
+                    <Card
+                      shadow="sm"
+                      padding="xl"
+                      component="a"
+                      href="#"
+                      target="_blank"
+                    >
+                      <Card.Section>
+                        <Image
+                          src="advertiser_login.png"
+                          h={220}
+                          alt="No way!"
+                          radius="md"
+                          fit="contain"
+                        />
+                      </Card.Section>
+
+                      <Text fw={500} size="lg" mt="md">
+                        As Advertiser
+                      </Text>
+
+                      <Text mt="xs" c="dimmed" size="sm">
+                        Log in to AdPulseNetwork to amplify your brand's reach & drive targeted traffic effortlessly.
+                      </Text>
+                    </Card>
+                  </Grid.Col>
+                  <Grid.Col span={6}><Card
                     shadow="sm"
                     padding="xl"
                     component="a"
@@ -110,7 +137,7 @@ const Navbar = () => {
                   >
                     <Card.Section>
                       <Image
-                        src="advertiser_login.png"
+                        src="publisher_login.png"
                         h={220}
                         alt="No way!"
                         radius="md"
@@ -119,68 +146,43 @@ const Navbar = () => {
                     </Card.Section>
 
                     <Text fw={500} size="lg" mt="md">
-                      As Advertiser
+                      As Publisher
                     </Text>
 
                     <Text mt="xs" c="dimmed" size="sm">
-                      Log in to AdPulseNetwork to amplify your brand's reach & drive targeted traffic effortlessly.
+                      Log in to AdPulseNetwork to monetize your content & maximize your earning with ease.
                     </Text>
-                  </Card>
-                </Grid.Col>
-                <Grid.Col span={6}><Card
-                  shadow="sm"
-                  padding="xl"
-                  component="a"
-                  href="#"
-                  target="_blank"
-                >
-                  <Card.Section>
-                    <Image
-                      src="publisher_login.png"
-                      h={220}
-                      alt="No way!"
-                      radius="md"
-                      fit="contain"
-                    />
-                  </Card.Section>
+                  </Card></Grid.Col>
+                </Grid>
+              </Modal>
 
-                  <Text fw={500} size="lg" mt="md">
-                    As Publisher
-                  </Text>
+              <Group visibleFrom="sm">
+                <Button variant="default" onClick={open}>Log in</Button>
+                <Menu width={200} shadow="md">
+                  <Menu.Target>
+                    <Button>Sign up</Button>
+                  </Menu.Target>
 
-                  <Text mt="xs" c="dimmed" size="sm">
-                    Log in to AdPulseNetwork to monetize your content & maximize your earning with ease.
-                  </Text>
-                </Card></Grid.Col>
-              </Grid>
-            </Modal>
+                  <Menu.Dropdown>
+                    <Menu.Item component="a" href="https://mantine.dev" target="_blank">
+                      As Advertiser
+                    </Menu.Item>
+                    <Menu.Item component="a" href="https://mantine.dev" target="_blank">
+                      As Publisher
+                    </Menu.Item>
+                  </Menu.Dropdown>
+                </Menu>
+                <Button > <IconCalendarMonth size={18} /> &nbsp; Scheduled call</Button>
+              </Group>
 
-            <Group visibleFrom="sm">
-              <Button variant="default" onClick={open}>Log in</Button>
-              <Menu width={200} shadow="md">
-                <Menu.Target>
-                  <Button>Sign up</Button>
-                </Menu.Target>
-
-                <Menu.Dropdown>
-                  <Menu.Item component="a" href="https://mantine.dev" target="_blank">
-                    As Advertiser
-                  </Menu.Item>
-                  <Menu.Item component="a" href="https://mantine.dev" target="_blank">
-                    As Publisher
-                  </Menu.Item>
-                </Menu.Dropdown>
-              </Menu>
-              <Button> <IconCalendarMonth size={18} /> &nbsp; Scheduled call</Button>
+              <Burger
+                opened={drawerOpened}
+                onClick={toggleDrawer}
+                hiddenFrom="sm"
+              />
             </Group>
-
-            <Burger
-              opened={drawerOpened}
-              onClick={toggleDrawer}
-              hiddenFrom="sm"
-            />
-          </Group>
-        </header>
+          </header>
+        </Container>
 
         <Drawer
           opened={drawerOpened}
