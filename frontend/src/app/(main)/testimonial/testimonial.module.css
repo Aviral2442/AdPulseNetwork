@@ -1,0 +1,8 @@
+.Container {
+    padding-top: 10px;
+    padding-left: calc(var(--mantine-spacing-xl) * 2);
+    padding-right: calc(var(--mantine-spacing-xl) * 2);
+    background-color: #F0F2F4;
+    padding-bottom: 30px;
+    
+}

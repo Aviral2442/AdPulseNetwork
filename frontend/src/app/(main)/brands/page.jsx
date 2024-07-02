@@ -2,6 +2,7 @@
 import { Container, Grid, Text, Title } from '@mantine/core';
 import { Manrope, Sora } from 'next/font/google';
 import React from 'react'
+import classes from './brands.module.css';
 
 const font = Sora({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] });
 const fonts = Manrope({ subsets: ['latin'], weight: ['200', '300', '400', '500'] });
