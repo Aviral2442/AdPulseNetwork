@@ -1,9 +1,17 @@
 'use client'
+import { Image } from '@mantine/core'
 import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div>HeroSection</div>
+    <div>
+      <Image
+        radius="md"
+        src="heroBanner.jpeg"
+        h={"30%"}
+        mt={5}
+      />
+    </div>
   )
 }
 
