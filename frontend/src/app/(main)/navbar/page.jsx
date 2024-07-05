@@ -82,7 +82,7 @@ const Navbar = () => {
               <img src="logo.png" alt="Mantine logo" />
 
               <Group h="100%" gap={0} visibleFrom="sm">
-                <Anchor href="#" className={classes.link}>
+                <Anchor href="/" className={classes.link}>
                   Home
                 </Anchor>
                 <Anchor href="#" className={classes.link}>
@@ -164,10 +164,10 @@ const Navbar = () => {
                   </Menu.Target>
 
                   <Menu.Dropdown>
-                    <Menu.Item component="a" href="https://mantine.dev" target="_blank">
+                    <Menu.Item component="a" href="/advertiser-signup" target="_blank">
                       As Advertiser
                     </Menu.Item>
-                    <Menu.Item component="a" href="https://mantine.dev" target="_blank">
+                    <Menu.Item component="a" href="/publisher-signup" target="_blank">
                       As Publisher
                     </Menu.Item>
                   </Menu.Dropdown>
@@ -196,7 +196,7 @@ const Navbar = () => {
           <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
             <Divider my="sm" />
 
-            <a href="#" className={classes.link}>
+            <a href="/" className={classes.link}>
               Home
             </a>
             <a href="#" className={classes.link}>
