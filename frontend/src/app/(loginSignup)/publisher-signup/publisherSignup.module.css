@@ -1,0 +1,17 @@
+.grid{
+    border-radius: 20px 20px 20px 20px;
+}
+
+.rightSection{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 500px;
+    color: #FFFFFF;
+    background-color: #333333;
+    padding: 30px;
+}
+
+.leftSection{
+    width: 500px;
+    background-color: #FFFFFF;
+    padding: 30px;
+}
