@@ -1,0 +1,12 @@
+.wrapper {
+    padding-left: calc(var(--mantine-spacing-xl) * 3);
+    padding-right: calc(var(--mantine-spacing-xl)*3);
+    padding-top: calc(var(--mantine-spacing-xl) * 1);
+    padding-bottom: calc(var(--mantine-spacing-xl) * 1);
+    
+    @media (max-width: $mantine-breakpoint-xs) {
+        padding-left: calc(var(--mantine-spacing-xl) * 3);
+        padding-right: calc(var(--mantine-spacing-xl)*3);
+    }
+}
+

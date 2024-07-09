@@ -1,11 +1,12 @@
 'use client';
-import React from 'react';
+import React, { useState } from 'react';
 import { Group, Button, UnstyledButton, Text, ThemeIcon, Divider, Box, Burger, Drawer, ScrollArea, rem, useMantineTheme, Card, Grid, Image, Menu, Anchor, Container } from "@mantine/core"
 import { useDisclosure } from "@mantine/hooks"
 import { IconNotification, IconCode, IconBook, IconChartPie3, IconFingerprint, IconCoin, IconCalendarMonth } from "@tabler/icons-react"
 import { Modal } from '@mantine/core';
 import classes from "./navbar.module.css"
 import TopHeader from './topHeader';
+import Link from 'next/link';
 
 const mockdata = [
   {
@@ -72,31 +73,49 @@ const Navbar = () => {
 
   const [opened, { open, close }] = useDisclosure(false);
 
+  // State for active link
+  const [activeLink, setActiveLink] = useState('Home');
+
+  // Function to handle link click
+  const handleLinkClick = (link) => {
+    setActiveLink(link);
+  };
+
   return (
     <>
       <TopHeader />
       <Box pb={5} p={15}  >
-        <Container size="xl" bg={"#F0F2F4"} p={8} py={15} className={classes.MainHeader} >
+        <Container size="xl" bg={"#fff"} p={8} py={15} className={classes.MainHeader} >
           <header className={classes.header}>
             <Group justify="space-around" h="100%">
               <img src="logo.png" alt="Mantine logo" />
 
               <Group h="100%" gap={0} visibleFrom="sm">
-                <Anchor href="/" className={classes.link}>
+                <Link href="/"
+                  className={`${classes.link} ${activeLink === 'Home' ? classes.active : ''}`}
+                  onClick={() => handleLinkClick('Home')}>
                   Home
-                </Anchor>
-                <Anchor href="#" className={classes.link}>
+                </Link>
+                <Link href="#"
+                  className={`${classes.link} ${activeLink === 'Advertiser' ? classes.active : ''}`}
+                  onClick={() => handleLinkClick('Advertiser')}>
                   Advertiser
-                </Anchor>
-                <Anchor href="#" className={classes.link}>
+                </Link>
+                <Link href="#"
+                  className={`${classes.link} ${activeLink === 'Publisher' ? classes.active : ''}`}
+                  onClick={() => handleLinkClick('Publisher')}>
                   Publisher
-                </Anchor>
-                <Anchor href="#" className={classes.link}>
+                </Link>
+                <Link href="#"
+                  className={`${classes.link} ${activeLink === 'Pricing' ? classes.active : ''}`}
+                  onClick={() => handleLinkClick('Pricing')}>
                   Pricing Models
-                </Anchor>
-                <Anchor href="#" className={classes.link}>
+                </Link>
+                <Link href="#"
+                  className={`${classes.link} ${activeLink === 'Verticals' ? classes.active : ''}`}
+                  onClick={() => handleLinkClick('Verticals')}>
                   Verticals
-                </Anchor>
+                </Link>
               </Group>
 
               <Modal opened={opened} onClose={close} title="Advertiser and Publisher Login" size="lg" centered>
