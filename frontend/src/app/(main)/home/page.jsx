@@ -13,6 +13,7 @@ const Home = () => {
   return (
     <div>
       
+      
       <HeroSection />
       <KnowMore />
       <Features />

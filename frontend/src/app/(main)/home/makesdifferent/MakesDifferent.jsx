@@ -2,6 +2,7 @@
 import { Button, Container, Flex, Grid, Group, Image, Paper, SimpleGrid, Text, Title } from '@mantine/core'
 import React from 'react'
 import classes from './makesdifferent.module.css'
+import { IconInnerShadowBottomLeftFilled, IconMathGreater } from '@tabler/icons-react'
 
 const MakesDifferent = () => {
   return (
@@ -10,23 +11,14 @@ const MakesDifferent = () => {
         <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
           <Image src="makesDifferent.jpg" alt="makes different" className={classes.img} />
         </Grid.Col>
-        <Grid.Col span={{ base: 12, md: 6, lg: 6 }} className={classes.leftBox} >
+        <Grid.Col span={{ base: 12, md: 6, lg: 6 }} className={classes.leftBox}  >
           <Text>/ features /</Text>
-          <Title mt={20} fz="xl" fw={700}>What makes us different?</Title>
-          <Text>Ad Pulse Network is the top platform for securing 100% genuine, convertible traffic. Boost sales and ROI with modern ad
-            formats like Text, Native, Image, and Popunder ads. Seamlessly monetize your website or blog traffic with our platform</Text>
+          <Title mt={20} fz="xl" fw={700}>What Makes Us Different?</Title>
+          <Text><li>Ad Pulse Network is the leading platform for securing 100% genuine, convertible traffic.</li></Text>
+          <Text><li>Boost sales and ROI with modern ad formats like Text, Native, Image, and Popunder ads.</li></Text>
+          <Text><li> Seamlessly monetize your website or blog traffic with our platform.</li></Text>
           <div>
-            <Flex
-              mih={50}
-              gap="xl"
-              justify="flex-start"
-              align="center"
-              direction="row"
-              wrap="wrap"
-            >
-              <Button bg={"white"} c={"black"} className={classes.btn} >Advertiser</Button>
-              <Button bg={"white"} c={"black"} className={classes.btn} >Publishers</Button>
-            </Flex>
+              <Button bg={"white"} c={"black"} className={classes.btn} >Learn more &nbsp; <IconMathGreater size={15} /></Button>
           </div>
         </Grid.Col>
       </Grid>
