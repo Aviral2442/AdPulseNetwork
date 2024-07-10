@@ -215,3 +215,35 @@
     opacity: 1;
     right: 0;
 }
+
+
+.footerInner {
+    height: 4em;
+
+    position: relative;
+
+    &::after {
+        content: '';
+        background: #333333;
+        height: 2em;
+        width: 2em;
+        position: absolute;
+        left: -31px;
+        bottom: 16px;
+        border-bottom-right-radius: 25px;
+        box-shadow: 0 16px 0 0 #ffffff;
+
+    }
+
+    &::before {
+        content: '';
+        background: #333333;
+        height: 50px;
+        width: 20px;
+        position: absolute;
+        right: -18px;
+        bottom: 16px;
+        border-bottom-left-radius: 25px;
+        box-shadow: 0 16px 0 0 #ffffff;
+    }
+}

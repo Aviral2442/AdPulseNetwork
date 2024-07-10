@@ -7,6 +7,11 @@ import { Modal } from '@mantine/core';
 import classes from "./navbar.module.css"
 import TopHeader from './topHeader';
 import Link from 'next/link';
+import { Manrope } from 'next/font/google';
+import clsx from 'clsx';
+
+const fonts = Manrope({ subsets: ['latin'], weight: ['200', '300', '400', '500'] });
+
 
 const mockdata = [
   {
@@ -176,10 +181,10 @@ const Navbar = () => {
               </Modal>
 
               <Group visibleFrom="sm">
-                <Button variant="default" onClick={open}>Log in</Button>
+                <Button variant="filled" c="#333333" color="#F0F2F4" className={classes.logButton}  onClick={open}>Log in</Button>
                 <Menu width={200} shadow="md">
                   <Menu.Target>
-                    <Button>Sign up</Button>
+                    <Button varient="filled" c="white" color='black'>Sign up</Button>
                   </Menu.Target>
 
                   <Menu.Dropdown>
@@ -191,7 +196,10 @@ const Navbar = () => {
                     </Menu.Item>
                   </Menu.Dropdown>
                 </Menu>
-                <Button > <IconCalendarMonth size={18} /> &nbsp; Scheduled call</Button>
+                {/* <Button > <IconCalendarMonth size={18} /> &nbsp; Scheduled call</Button> */}
+                <div className={classes.container}>
+                  <button className={clsx(classes.button,fonts.className)}>  Scheduled call</button>
+                </div>
               </Group>
 
               <Burger

@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import React, { useState } from 'react'
 import { Text, Container, Group, rem, Paper, Anchor, SimpleGrid, Title, TextInput, Button, Textarea, Divider, Grid, Input } from "@mantine/core"
 import {
@@ -146,7 +146,7 @@ export function Footer() {
               mt="md"
               classNames={{ input: classes.input, label: classes.inputLabel }}
             /> */}
-            <Input type='text'  mt="lg" placeholder="Full Name" required />
+            <Input type='text' mt="lg" placeholder="Full Name" required />
 
             {/* <TextInput
               label="Email"
@@ -154,14 +154,14 @@ export function Footer() {
               required
               classNames={{ input: classes.input, label: classes.inputLabel }}
             /> */}
-            <Input type='email'  mt="lg" placeholder="Email" required  />
+            <Input type='email' mt="lg" placeholder="Email" required />
             {/* <TextInput
               label="Subject"
               placeholder=""
               mt="md"
               classNames={{ input: classes.input, label: classes.inputLabel }}
             /> */}
-            <Input type='text'  mt="lg" placeholder="Subject"  required/>
+            <Input type='text' mt="lg" placeholder="Subject" required />
             {/* <Textarea
               required
               label="Your message"
@@ -170,7 +170,7 @@ export function Footer() {
               mt="md"
               classNames={{ input: classes.input, label: classes.inputLabel }}
             /> */}
-            <Textarea  type='textarea'  mt="lg" placeholder="Message" required />
+            <Textarea type='textarea' mt="lg" placeholder="Message" required />
 
             <Group justify="flex-start" mt="xl">
               <Button className={classes.button}>
@@ -187,8 +187,8 @@ export function Footer() {
         <Container className={classes.inner} fluid>
           <div className={classes.groups}>{groups}</div>
         </Container>
-
       </footer>
+      <div className={classes.sidebar}>
       <Group justify="space-between" className={classes.footerInner}>
         <Text fz={14}>©Neuros 2024. All rights reserved.</Text>
         <div>
@@ -197,6 +197,7 @@ export function Footer() {
           <Anchor fz={14} href='#'>Environmental Policy</Anchor>
         </div>
       </Group>
+      </div>
     </>
   );
 }
