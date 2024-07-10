@@ -16,6 +16,13 @@
     padding-bottom: calc(var(--mantine-spacing-xl) * 3);
     margin-bottom: calc(var(--mantine-spacing-xl) * 1);
 
+    @media (max-width: $mantine-breakpoint-sm) {
+        padding-top: calc(var(--mantine-spacing-xl) * 1);
+        margin-right: calc(var(--mantine-spacing-md));
+        margin-left: calc(var(--mantine-spacing-md));
+        padding-bottom: calc(var(--mantine-spacing-xl) * 4);
+
+    }
 }
 
 .inner {
@@ -27,6 +34,7 @@
     @media (max-width: $mantine-breakpoint-sm) {
         flex-direction: column;
         align-items: center;
+        padding-left: calc(var(--mantine-spacing-xl)*2);
 
     }
 }
@@ -36,14 +44,16 @@
     flex-wrap: wrap;
 
 
-    @media (max-width: $mantine-breakpoint-sm) {
-        justify-content: end;
-
-    }
+    @media (max-width: $mantine-breakpoint-sm) {}
 }
 
 .wrapper {
     width: rem(300px);
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        width: rem(400px);
+        padding-top: 20px;
+    }
 }
 
 .link {
@@ -80,6 +90,8 @@
 
     @media (max-width: $mantine-breakpoint-sm) {
         padding: calc(var(--mantine-spacing-xl) * 1.5);
+        margin-right: calc(var(--mantine-spacing-md));
+        margin-left: calc(var(--mantine-spacing-md));
     }
 }
 
@@ -106,6 +118,14 @@
     padding: calc(var(--mantine-spacing-xl) *3);
     border-radius: var(--mantine-radius-xl);
     box-shadow: var(--mantine-shadow-lg);
+
+    @media (max-width: $mantine-breakpoint-sm) {
+        padding: calc(var(--mantine-spacing-xl));
+        padding-top: calc(var(--mantine-spacing-xl) * 2);
+        padding-bottom: calc(var(--mantine-spacing-xl) * 2);
+        margin-right: -30px;
+        margin-left: -30px;
+    }
 }
 
 .social {
@@ -147,6 +167,15 @@
     padding-left: 30px;
     padding-right: 30px;
 
+    @media (max-width: $mantine-breakpoint-sm) {
+        margin-top: -130px;
+        justify-content: center;
+        margin-right: calc(var(--mantine-spacing-xl) * 2);
+        margin-left: calc(var(--mantine-spacing-xl) * 2);
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 30px;
+    }
 }
 
 .button {
@@ -222,16 +251,34 @@
 
     position: relative;
 
+    @media (max-width: $mantine-breakpoint-sm) {
+        height: 7em;
+    }
+
     &::after {
         content: '';
         background: #333333;
-        height: 2em;
+        height: 40px;
         width: 2em;
         position: absolute;
-        left: -31px;
+        left: -28px;
         bottom: 16px;
         border-bottom-right-radius: 25px;
         box-shadow: 0 16px 0 0 #ffffff;
+
+        @media (max-width: $mantine-breakpoint-sm) {
+            content: '';
+            background: #333333;
+            height: 80px;
+            width: 2em;
+            position: absolute;
+            left: -32px;
+            bottom: 17.5px;
+            border-bottom-right-radius: 25px;
+            box-shadow: 0 16px 0 0 #ffffff;
+        }
+
+
 
     }
 
@@ -245,5 +292,18 @@
         bottom: 16px;
         border-bottom-left-radius: 25px;
         box-shadow: 0 16px 0 0 #ffffff;
+
+        @media (max-width: $mantine-breakpoint-sm) {
+            content: '';
+            background: #333333;
+            height: 80px;
+            width: 20px;
+            position: absolute;
+            right: -20px;
+            bottom: 16px;
+            border-bottom-left-radius: 25px;
+            box-shadow: 0 16px 0 0 #ffffff;
+        }
+
     }
 }

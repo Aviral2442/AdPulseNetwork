@@ -132,6 +132,7 @@ export function Footer() {
             </div>
 
           </div>
+          
           <div className={clsx(classes.form, fonts.className)}>
             <Title c="black" className={font.className}>Get in Touch</Title>
             <Text c="black" mt="sm" mb="lg" >
@@ -188,15 +189,16 @@ export function Footer() {
           <div className={classes.groups}>{groups}</div>
         </Container>
       </footer>
+
       <div className={classes.sidebar}>
-      <Group justify="space-between" className={classes.footerInner}>
-        <Text fz={14}>©Neuros 2024. All rights reserved.</Text>
-        <div>
-          <Anchor fz={14} href='#'>Terms of use</Anchor>
-          <Anchor fz={14} href='#'>Privacy </Anchor>
-          <Anchor fz={14} href='#'>Environmental Policy</Anchor>
-        </div>
-      </Group>
+        <Group justify="space-between" className={classes.footerInner}>
+          <Text fz={14}>©Neuros 2024. All rights reserved.</Text>
+          <div>
+            <Anchor fz={14} href='#'>Terms of use</Anchor>
+            <Anchor fz={14} href='#'>Privacy </Anchor>
+            <Anchor fz={14} href='#'>Environmental Policy</Anchor>
+          </div>
+        </Group>
       </div>
     </>
   );
