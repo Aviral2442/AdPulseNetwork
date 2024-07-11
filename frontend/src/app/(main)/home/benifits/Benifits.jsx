@@ -12,7 +12,7 @@ const Benifits = () => {
   return (
     <>
       <div className={classes.section}>
-        <Container  >
+        <Container className={classes.Container} >
           <Text className={fonts.className} c="white" mt="md">
             / ADVERTISER & PUBLISHER BENEFITS  /
           </Text>

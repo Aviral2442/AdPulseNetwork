@@ -35,6 +35,13 @@
 .imageWrapper img {
     max-width: 50%;
     height: auto;
+    opacity: 0.2;
+    transition: opacity 0.5s;
+}
+
+.imageWrapper img:hover {
+    opacity: 1;
+
 }
 
 .carousel {
@@ -56,6 +63,12 @@
 .image1 {
     max-width: 40%;
     height: auto;
+    opacity: 0.2;
+    transition: opacity 0.5s;
+}
+
+.image1:hover {
+    opacity: 1;
 }
 
 

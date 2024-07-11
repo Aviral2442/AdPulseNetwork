@@ -94,7 +94,7 @@ export function Footer() {
   return (
     <>
       <div className={classes.wrapper1}>
-        <SimpleGrid cols={{ base: 1, sm: 2 }} spacing={50}>
+        <SimpleGrid cols={{ base: 1, lg: 2 }} spacing={50}>
           <div >
             <Text mt={80} mb={20} c={"white"} className={fonts.className}>/get in touch/</Text>
 

@@ -33,7 +33,7 @@ const Brands = () => {
                 withIndicators
                 className={classes.carousel}
                 classNames={classes}
-                height={150}
+                height={190}
                 withControls={false}                
                 loop
                 align="center"

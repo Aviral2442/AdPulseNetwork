@@ -31,7 +31,7 @@
 
     justify-content: end;
 
-    @media (max-width: $mantine-breakpoint-sm) {
+    @media (max-width: $mantine-breakpoint-xl) {
         flex-direction: column;
         align-items: center;
         padding-left: calc(var(--mantine-spacing-xl)*2);
@@ -43,8 +43,11 @@
     display: flex;
     flex-wrap: wrap;
 
+    @media (max-width: $mantine-breakpoint-sm) {
+        flex-direction: column;
+        flex-wrap: wrap;
 
-    @media (max-width: $mantine-breakpoint-sm) {}
+    }
 }
 
 .wrapper {
