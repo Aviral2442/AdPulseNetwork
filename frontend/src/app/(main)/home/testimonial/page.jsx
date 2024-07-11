@@ -18,7 +18,6 @@ const Testimonials = () => {
         cols={{ base: 1, sm: 2, lg: 4 }}
         spacing={{ base: 10, sm: 'xl' }}
         verticalSpacing={{ base: 'md', sm: 'xl' }}
-
       >
         <div>
           <Card withBorder padding="xl" radius="xl" >
@@ -182,6 +181,7 @@ const Testimonials = () => {
           </Card>
         </div>
       </SimpleGrid>
+      <span className={classes.Inner}></span>
     </Container>
   )
 }
