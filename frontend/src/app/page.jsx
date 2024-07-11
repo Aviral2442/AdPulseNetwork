@@ -7,7 +7,7 @@ import classes from './page.module.css'
 
 const Homepage = () => {
   return (
-    <div className={classes.body} >
+    <div  >
       <Navbar />
       <Home />
       <Footer />

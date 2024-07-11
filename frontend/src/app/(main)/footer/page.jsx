@@ -132,7 +132,7 @@ export function Footer() {
             </div>
 
           </div>
-          
+
           <div className={clsx(classes.form, fonts.className)}>
             <Title c="black" className={font.className}>Get in Touch</Title>
             <Text c="black" mt="sm" mb="lg" >
