@@ -1,15 +1,17 @@
 .TopHeader {
   border-radius: 11px;
 
-  @media screen and (max-width: 768px) {
-    border-radius: 0px;
-    width: 100%;
-    margin: 5px;
+  @media screen and (max-width: 1300px) {
+    display: none;
   }
 }
 
-.TopHeaderDetails:hover {
-  color: #F14F44;
+.TopHeaderDetails{
+  font-size: small;
+
+  @media screen and (max-width: 768px){
+    font-size: 11px;
+  }
 }
 
 .socialIcons {
