@@ -12,39 +12,38 @@ import clsx from 'clsx';
 
 const fonts = Manrope({ subsets: ['latin'], weight: ['200', '300', '400', '500'] });
 
-
-const mockdata = [
-  {
-    icon: IconCode,
-    title: "Open source",
-    description: "This Pokémon’s cry is very loud and distracting"
-  },
-  {
-    icon: IconCoin,
-    title: "Free for everyone",
-    description: "The fluid of Smeargle’s tail secretions changes"
-  },
-  {
-    icon: IconBook,
-    title: "Documentation",
-    description: "Yanma is capable of seeing 360 degrees without"
-  },
-  {
-    icon: IconFingerprint,
-    title: "Security",
-    description: "The shell’s rounded shape and the grooves on its."
-  },
-  {
-    icon: IconChartPie3,
-    title: "Analytics",
-    description: "This Pokémon uses its flying ability to quickly chase"
-  },
-  {
-    icon: IconNotification,
-    title: "Notifications",
-    description: "Combusken battles with the intensely hot flames it spews"
-  }
-]
+// const mockdata = [
+//   {
+//     icon: IconCode,
+//     title: "Open source",
+//     description: "This Pokémon’s cry is very loud and distracting"
+//   },
+//   {
+//     icon: IconCoin,
+//     title: "Free for everyone",
+//     description: "The fluid of Smeargle’s tail secretions changes"
+//   },
+//   {
+//     icon: IconBook,
+//     title: "Documentation",
+//     description: "Yanma is capable of seeing 360 degrees without"
+//   },
+//   {
+//     icon: IconFingerprint,
+//     title: "Security",
+//     description: "The shell’s rounded shape and the grooves on its."
+//   },
+//   {
+//     icon: IconChartPie3,
+//     title: "Analytics",
+//     description: "This Pokémon uses its flying ability to quickly chase"
+//   },
+//   {
+//     icon: IconNotification,
+//     title: "Notifications",
+//     description: "Combusken battles with the intensely hot flames it spews"
+//   }
+// ]
 
 const Navbar = () => {
 
@@ -55,26 +54,26 @@ const Navbar = () => {
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false)
   const theme = useMantineTheme()
 
-  const links = mockdata.map(item => (
-    <UnstyledButton className={classes.subLink} key={item.title}>
-      <Group wrap="nowrap" align="flex-start">
-        <ThemeIcon size={34} variant="default" radius="md">
-          <item.icon
-            style={{ width: rem(22), height: rem(22) }}
-            color={theme.colors.blue[6]}
-          />
-        </ThemeIcon>
-        <div>
-          <Text size="sm" fw={500}>
-            {item.title}
-          </Text>
-          <Text size="xs" c="dimmed">
-            {item.description}
-          </Text>
-        </div>
-      </Group>
-    </UnstyledButton>
-  ))
+  // const links = mockdata.map(item => (
+  //   <UnstyledButton className={classes.subLink} key={item.title}>
+  //     <Group wrap="nowrap" align="flex-start">
+  //       <ThemeIcon size={34} variant="default" radius="md">
+  //         <item.icon
+  //           style={{ width: rem(22), height: rem(22) }}
+  //           color={theme.colors.blue[6]}
+  //         />
+  //       </ThemeIcon>
+  //       <div>
+  //         <Text size="sm" fw={500}>
+  //           {item.title}
+  //         </Text>
+  //         <Text size="xs" c="dimmed">
+  //           {item.description}
+  //         </Text>
+  //       </div>
+  //     </Group>
+  //   </UnstyledButton>
+  // ))
 
   const [opened, { open, close }] = useDisclosure(false);
 
@@ -89,11 +88,11 @@ const Navbar = () => {
   return (
     <>
       <TopHeader />
-      <Box pb={5} p={15}  >
-        <Container size="xl" bg={"#fff"} p={8} py={15} className={classes.MainHeader} >
+      <Box  p={15}  >
+        <Container size="xl" bg={"#fff"} p={4}  className={classes.MainHeader} >
           <header className={classes.header}>
             <Group justify="space-around" h="100%">
-              <img src="logo.png" alt="Mantine logo" />
+              <img src="logo.png" alt="adpulsenetwork" />
 
               <Group h="100%" gap={0} visibleFrom="sm">
                 <Link href="/"
@@ -101,22 +100,22 @@ const Navbar = () => {
                   onClick={() => handleLinkClick('Home')}>
                   Home
                 </Link>
-                <Link href="#"
+                <Link href="/advertiser"
                   className={`${classes.link} ${activeLink === 'Advertiser' ? classes.active : ''}`}
                   onClick={() => handleLinkClick('Advertiser')}>
                   Advertiser
                 </Link>
-                <Link href="#"
+                <Link href="/publisher"
                   className={`${classes.link} ${activeLink === 'Publisher' ? classes.active : ''}`}
                   onClick={() => handleLinkClick('Publisher')}>
                   Publisher
                 </Link>
-                <Link href="#"
+                <Link href="/pricing-models"
                   className={`${classes.link} ${activeLink === 'Pricing' ? classes.active : ''}`}
                   onClick={() => handleLinkClick('Pricing')}>
                   Pricing Models
                 </Link>
-                <Link href="#"
+                <Link href="/verticals"
                   className={`${classes.link} ${activeLink === 'Verticals' ? classes.active : ''}`}
                   onClick={() => handleLinkClick('Verticals')}>
                   Verticals
@@ -181,7 +180,7 @@ const Navbar = () => {
               </Modal>
 
               <Group visibleFrom="sm">
-                <Button variant="filled" c="#333333" color="#F0F2F4" className={classes.logButton}  onClick={open}>Log in</Button>
+                <Button variant="filled" c="#333333" color="#F0F2F4" className={classes.logButton} onClick={open}>Log in</Button>
                 <Menu width={200} shadow="md">
                   <Menu.Target>
                     <Button varient="filled" c="white" color='black'>Sign up</Button>
@@ -197,9 +196,11 @@ const Navbar = () => {
                   </Menu.Dropdown>
                 </Menu>
                 {/* <Button > <IconCalendarMonth size={18} /> &nbsp; Scheduled call</Button> */}
-                <div className={classes.container}>
-                  <button className={clsx(classes.button,fonts.className)}>  Scheduled call</button>
-                </div>
+                <Link href="/scheduled-call" >
+                  <div className={classes.container}>
+                    <button className={clsx(classes.button, fonts.className)}>Scheduled call</button>
+                  </div>
+                </Link>
               </Group>
 
               <Burger
@@ -223,21 +224,21 @@ const Navbar = () => {
           <ScrollArea h={`calc(100vh - ${rem(80)})`} mx="-md">
             <Divider my="sm" />
 
-            <a href="/" className={classes.link}>
+            <Link href="/" className={classes.link}>
               Home
-            </a>
-            <a href="#" className={classes.link}>
+            </Link>
+            <Link href="/advertiser" className={classes.link}>
               Advertiser
-            </a>
-            <a href="#" className={classes.link}>
+            </Link>
+            <Link href="/publisher" className={classes.link}>
               Publisher
-            </a>
-            <a href="#" className={classes.link}>
+            </Link>
+            <Link href="/pricing-models" className={classes.link}>
               Pricing Models
-            </a>
-            <a href="#" className={classes.link}>
+            </Link>
+            <Link href="verticals" className={classes.link}>
               Verticals
-            </a>
+            </Link>
 
             <Divider my="sm" />
 
