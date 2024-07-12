@@ -1,5 +1,5 @@
 'use client'
-import { Container, Flex, Image, SimpleGrid } from '@mantine/core'
+import { Container, Image, SimpleGrid } from '@mantine/core'
 import React from 'react'
 
 const KnowMore = () => {
@@ -28,24 +28,6 @@ const KnowMore = () => {
               src="image8.png"
             />
           </div>
-          {/* <div>
-              <Image
-                p={5}
-                radius="md"
-                src="image4.png"
-              />
-              <Image
-                p={5}
-                radius="md"
-                src="image5.png"
-                h={200}
-              />
-              <Image
-                p={5}
-                radius="md"
-                src="image6.png"
-              />
-            </div> */}
         </SimpleGrid>
       </div>
     </Container>
