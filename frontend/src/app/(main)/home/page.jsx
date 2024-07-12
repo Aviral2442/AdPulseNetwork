@@ -7,12 +7,11 @@ import KnowMore from './knowmore/page'
 import Features from './features/features'
 import MakesDifferent from './makesdifferent/MakesDifferent'
 import Benifits from './benifits/Benifits'
-import Blogs from './blogs/Blogs'
+// import Blogs from './blogs/Blogs'
 
 const Home = () => {
   return (
     <div>
-      
       
       <HeroSection />
       <KnowMore />
@@ -20,7 +19,7 @@ const Home = () => {
       <MakesDifferent />
       <Benifits />
       <Testimonials />
-      <Blogs />
+      {/* <Blogs /> */}
       <Brands />
 
     </div>

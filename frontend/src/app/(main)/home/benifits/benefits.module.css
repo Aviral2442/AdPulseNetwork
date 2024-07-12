@@ -5,6 +5,8 @@
   margin-left: calc(var(--mantine-spacing-xl) * 2);
   margin-right: calc(var(--mantine-spacing-xl) * 2);
   border-radius: calc(var(--mantine-radius-md) * 2);
+  margin-top: 30px;
+  margin-bottom: 30px;
 
   @media screen and (max-width: $mantine-breakpoint-xl) {
     margin-left: calc(var(--mantine-spacing-md));

@@ -16,12 +16,13 @@ const Brands = () => {
             <Text className={fonts.className}>/partners/</Text>
             <Title fw={400} order={1} mb={19} className={clsx(classes.Title, font.className)}>Big Brands & Exclusive Advertisers</Title>
             <SimpleGrid
+            py={25}
                 className={classes.grid}
                 cols={{ base: 1, sm: 2, lg: 5 }}
                 spacing={{ base: 10, sm: 'xl' }}
                 verticalSpacing={{ base: 'md', sm: 'xl' }}
             >
-                {['01.png', '02.png', '03.png', '04.png', '05.png'].map((src, index) => (
+                {['011.png', '022.png', '033.png', '044.png', '055.png'].map((src, index) => (
                     <div key={index} className={classes.imageWrapper}>
                         <Image src={src} alt={`Brand ${index + 1}`} fit="contain" />
                     </div>
