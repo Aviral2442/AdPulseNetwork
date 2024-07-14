@@ -15,7 +15,7 @@ const PublisherSignup = () => {
           bg={"#F0F2F4"}
         >
           <Grid bg={"#FFFFFF"} className={classes.grid} >
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
+            <Grid.Col span={{ base: 12, md: 6, lg: 5 }}>
               <div className={classes.rightSection} >
                 <Text  py={15}  align="center" weight={700} size="xl">Publisher Signup</Text>
                 <Text  py={15} >Register Now to Unlock A Range of Advertising Benefits!</Text>
@@ -27,7 +27,7 @@ const PublisherSignup = () => {
                 <Text py={15} >Please ensure that your website complies with all our advertising Terms and Policies to promote your business effectively.</Text>
               </div>
             </Grid.Col>
-            <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
+            <Grid.Col span={{ base: 12, md: 6, lg: 7 }}>
               <div className={classes.leftSection} >
                   <PubSignupForm />
               </div>

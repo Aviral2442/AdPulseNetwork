@@ -1,144 +1,147 @@
-'use client'
-import React from 'react';
-import { useState } from "react";
-import { Stepper, Button, Group, TextInput, PasswordInput, Code} from "@mantine/core";
-import { useForm } from "@mantine/form";
+"use client"
+import { useState } from "react"
+import { Stepper, Button, Group, Container, Text, TextInput, PasswordInput, Checkbox, SimpleGrid } from "@mantine/core"
+import React from 'react'
+import { Form } from "@mantine/form"
+import { useDisclosure } from "@mantine/hooks"
+import classes from './publisherSignup.module.css'
 
 const PubSignupForm = () => {
-
-  const [active, setActive] = useState(0)
-
-  const form = useForm({
-    mode: "uncontrolled",
-    initialValues: {
-      username: "",
-      password: "",
-      name: "",
-      email: "",
-      website: "",
-      github: ""
-    },
-
-    validate: values => {
-      if (active === 0) {
-        return {
-          username:
-            values.username.trim().length < 6
-              ? "Username must include at least 6 characters"
-              : null,
-          password:
-            values.password.length < 6
-              ? "Password must include at least 6 characters"
-              : null
-        }
-      }
-
-      if (active === 1) {
-        return {
-          name:
-            values.name.trim().length < 2
-              ? "Name must include at least 2 characters"
-              : null,
-          email: /^\S+@\S+$/.test(values.email) ? null : "Invalid email"
-        }
-      }
-
-      return {}
-    }
-  })
-
+  const [active, setActive] = useState(1)
   const nextStep = () =>
-    setActive(current => {
-      if (form.validate().hasErrors) {
-        return current
-      }
-      return current < 3 ? current + 1 : current
-    })
-
+    setActive(current => (current < 3 ? current + 1 : current))
   const prevStep = () =>
     setActive(current => (current > 0 ? current - 1 : current))
 
+  const [visible, { toggle }] = useDisclosure(false)
   return (
-    <>
-    <Stepper active={active}>
-      <Stepper.Step label="First step" description="General Info.">
+    <Container p={0} >
+      <Text align="center" weight={700} size="xl" py={20}>
+        Begin Your Publishing Journey With Ad Pulse Network
+      </Text>
+      {/* <Form onSubmit={from}> */}
+      <Stepper
+        active={active}
+        onStepClick={setActive}
+        allowNextStepsSelect={false}
+        size="xs"
+        w={"100%"}
+      >
+        <Stepper.Step label="General Info." description="">
+          <div className={classes.InputBox} >
+            <TextInput
+              required
+              label="First Name"
+              placeholder="First Name"
+              radius="md"
+              py={8}
+            />
+            <TextInput
+              required
+              label="Last Name"
+              placeholder="Last Name"
+              radius="md"
+              py={8}
+            />
+            <TextInput
+              required
+              label="Email"
+              placeholder="Enter your email"
+              radius="md"
+              py={8}
+            />
+          </div>
+        </Stepper.Step>
+        <Stepper.Step label="Details" description="">
 
-      <TextInput
-        label="Name"
-        placeholder="Name"
-      />
-      <TextInput
-        mt="sm"
-        label="Email"
-        placeholder="Email"
-      />
-
-        {/* <TextInput
-          label="Username"
-          placeholder="Username"
-          key={form.key("username")}
-          {...form.getInputProps("username")}
-        />
-        <PasswordInput
-          mt="md"
-          label="Password"
-          placeholder="Password"
-          key={form.key("password")}
-          {...form.getInputProps("password")}
-        /> */}
-
-      </Stepper.Step>
-
-      <Stepper.Step label="Second step" description="Personal Details">
-
-        <TextInput
-          label="Name"
-          placeholder="Name"
-          key={form.key("name")}
-          {...form.getInputProps("name")}
-        />
-        <TextInput
-          mt="md"
-          label="Email"
-          placeholder="Email"
-          key={form.key("email")}
-          {...form.getInputProps("email")}
-        />
-
-      </Stepper.Step>
-
-      <Stepper.Step label="Final step" description="Password">
-        <TextInput
-          label="Website"
-          placeholder="Website"
-          key={form.key("website")}
-          {...form.getInputProps("website")}
-        />
-        <TextInput
-          mt="md"
-          label="GitHub"
-          placeholder="GitHub"
-          key={form.key("github")}
-          {...form.getInputProps("github")}
-        />
-      </Stepper.Step>
-      <Stepper.Completed>
-        Completed! Form values:
-        <Code block mt="xl">
-          {JSON.stringify(form.getValues(), null, 2)}
-        </Code>
-      </Stepper.Completed>
-    </Stepper>
-
-    <Group justify="flex-end" mt="xl">
-      {active !== 0 && (
+          <div className={classes.InputBox} >
+            <SimpleGrid cols={{ base: 1, sm: 2 }}>
+              <TextInput
+                required
+                label="Phone No."
+                placeholder="Phone number"
+                radius="md"
+                py={8}
+              />
+              <TextInput
+                required
+                label="ID/Number"
+                placeholder="Enter your ID number"
+                radius="md"
+                py={8}
+              />
+            </SimpleGrid>
+            <SimpleGrid cols={{ base: 1, sm: 2 }}>
+              <TextInput
+                required
+                label="Country"
+                placeholder="Select your country"
+                radius="md"
+                py={8}
+              />
+              <TextInput
+                required
+                label="State"
+                placeholder="Select your state"
+                radius="md"
+                py={8}
+              />
+            </SimpleGrid>
+            <SimpleGrid cols={{ base: 1, sm: 2 }}>
+              <TextInput
+                required
+                label="Select Business Category"
+                placeholder="Select your business category"
+                radius="md"
+                py={8}
+              />
+              <TextInput
+                required
+                label="Select Messenger"
+                placeholder="Select your messenger"
+                radius="md"
+                py={8}
+              />
+            </SimpleGrid>
+          </div>
+        </Stepper.Step>
+        <Stepper.Step label="Passowrd" description="">
+          <div className={classes.InputBox} >
+            <PasswordInput
+              label="Password"
+              // defaultValue="secret"
+              visible={visible}
+              onVisibilityChange={toggle}
+              py={8}
+            />
+            <PasswordInput
+              label="Confirm password"
+              // defaultValue="secret"
+              visible={visible}
+              onVisibilityChange={toggle}
+              py={8}
+            />
+            <Checkbox label="Keep me logged in" mt="xl" size="md" />
+          </div>
+        </Stepper.Step>
+        <Stepper.Completed>
+          <div className={classes.InputBox} >
+            <Text align="center" weight={700} size="xl" py={20}>
+              Thank you for signing up!
+            </Text>
+          </div>
+        </Stepper.Completed>
+      </Stepper>
+      {/* </Form> */}
+      <Group justify="center" mt="xl">
         <Button variant="default" onClick={prevStep}>
           Back
         </Button>
-      )}
-      {active !== 3 && <Button onClick={nextStep}>Next step</Button>}
-    </Group>
-  </>
+        <Button onClick={nextStep}>
+          Submit step
+        </Button>
+      </Group>
+    </Container>
   )
 }
 

@@ -4,14 +4,37 @@
 
 .rightSection{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    width: 500px;
+    width: 450px;
     color: #FFFFFF;
     background-color: #333333;
     padding: 30px;
+    
+    @media screen and (max-width: 1000px){
+        display: none;
+        
+    }
 }
 
 .leftSection{
-    width: 500px;
+    width: 600px;
     background-color: #FFFFFF;
-    padding: 30px;
+    padding: 30px 30px;
+
+    @media screen and (max-width: 1000px){
+        width: 100%;
+    }
+}
+
+.InputBox{
+    padding: 20px 50px;
+
+    @media screen and (max-width: 1000px){
+        padding: 10px;
+        
+    }
+
+    @media screen and (max-width: 400px){
+        padding: 5px;
+        
+    }
 }
