@@ -15,6 +15,7 @@ import { RiInstagramFill } from "react-icons/ri";
 import { BiLogoTiktok } from "react-icons/bi";
 import clsx from 'clsx';
 import { Manrope, Sora } from 'next/font/google';
+import Brands from './brands/page';
 
 const font = Sora({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] });
 const fonts = Manrope({ subsets: ['latin'], weight: ['200', '300', '400', '500'] });
@@ -93,6 +94,8 @@ export function Footer() {
 
   return (
     <>
+    <div>
+      <Brands />
       <div className={classes.wrapper1}>
         <SimpleGrid cols={{ base: 1, lg: 2 }} spacing={50}>
           <div >
@@ -200,6 +203,7 @@ export function Footer() {
           </div>
         </Group>
       </div>
+    </div>
     </>
   );
 }

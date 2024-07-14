@@ -1,6 +1,5 @@
 'use client'
 import React from 'react'
-import Brands from './brands/page'
 import Testimonials from './testimonial/page'
 import HeroSection from './heroSection/page'
 import KnowMore from './knowmore/page'
@@ -20,7 +19,6 @@ const Home = () => {
       <Benifits />
       <Testimonials />
       {/* <Blogs /> */}
-      <Brands />
 
     </div>
   )

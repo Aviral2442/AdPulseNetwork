@@ -2,12 +2,12 @@
 import { Image } from '@mantine/core'
 import React from 'react'
 
-const HeroSection = () => {
+const IconsSection1 = () => {
   return (
     <div>
       <Image
         radius="md"
-        src="heroBanner.png"
+        src="iconsSection1.png"
         // h={"30%"}
         mt={5}
       />
@@ -15,4 +15,4 @@ const HeroSection = () => {
   )
 }
 
-export default HeroSection
+export default IconsSection1
