@@ -24,7 +24,7 @@ const RegisterCampion = () => {
                                 benefits await.
                             </Text>
                             <Text py={8} >
-                                Ad Pulse Network's primary objective is to grow your business and guide you toward remarkable success!
+                                Ad Pulse Network&apos;s primary objective is to grow your business and guide you toward remarkable success!
                             </Text>
                             {/* <Text py={8} >
                                 Effortlessly monetize your website or blog traffic with our platform.

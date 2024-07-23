@@ -14,18 +14,21 @@ const KnowMore = () => {
             <Image
               radius="md"
               src="image1.png"
+              alt='Image 1'
             />
           </div>
           <div>
             <Image
               radius="md"
               src="image2.png"
+              alt='Image 2'
             />
           </div>
           <div>
             <Image
               radius="md"
               src="image8.png"
+              alt='Image 3'
             />
           </div>
         </SimpleGrid>

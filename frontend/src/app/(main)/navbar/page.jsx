@@ -92,7 +92,7 @@ const Navbar = () => {
         <Container size="xl" bg={"#fff"} p={4}  className={classes.MainHeader} >
           <header className={classes.header}>
             <Group justify="space-around" h="100%">
-              <img src="logo.png" alt="adpulsenetwork" />
+              <Image src="logo.png" alt="adpulsenetwork" />
 
               <Group h="100%" gap={0} visibleFrom="sm">
                 <Link href="/"
@@ -147,7 +147,7 @@ const Navbar = () => {
                       </Text>
 
                       <Text mt="xs" c="dimmed" size="sm">
-                        Log in to AdPulseNetwork to amplify your brand's reach & drive targeted traffic effortlessly.
+                        Log in to AdPulseNetwork to amplify your brand&apos;s reach & drive targeted traffic effortlessly.
                       </Text>
                     </Card>
                   </Grid.Col>

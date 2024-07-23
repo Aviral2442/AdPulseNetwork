@@ -9,6 +9,7 @@ const IconSection = () => {
       src="iconsSection1.png"
       // h={"30%"}
       mt={5}
+      alt='Icons Section'
     />
   </div>
   )

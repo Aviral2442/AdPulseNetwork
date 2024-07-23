@@ -121,7 +121,7 @@ const Testimonials = () => {
               definitely recommend it. I
               bought dozens of themes. If I put
               them all on top of each other, it
-              can't catch the success of this
+              can&apos;t catch the success of this
               theme.
             </Text>
           </Card>
@@ -133,9 +133,9 @@ const Testimonials = () => {
 
             <Text className={fonts.className} fz="sm" fw={400} c="#333333" mt={10}>
               This is one of the best Theme
-              I've purchased thus far. And the
+              I&apos;ve purchased thus far. And the
               customer support by the Author
-              IS first-class. Verv professiona'
+              IS first-class. Verv professiona&apos;
             </Text>
           </Card>
         </div>
@@ -161,7 +161,7 @@ const Testimonials = () => {
               customer support! The author
               always provided a solution even
               though it was not theme related.
-              I'll surely buy new WordPress
+              I&apos;ll surely buy new WordPress
               themes from Artureanec.
             </Text>
           </Card>
