@@ -1,7 +1,7 @@
 'use client'
 import { Button, Container, Flex, Grid, Paper, Text, Title } from '@mantine/core';
 import React from 'react';
-import classes from './features.module.css';
+import classes from './whychoose.module.css';
 import { IconHandClick } from '@tabler/icons-react';
 import { Manrope, Sora } from 'next/font/google';
 
