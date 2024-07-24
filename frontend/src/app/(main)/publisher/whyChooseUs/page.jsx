@@ -165,7 +165,7 @@ const WhyChooseUs = () => {
                     </Container>
                 </Paper>
                 <Title order={3} fw={500} c="black" py={12} >Multiple Payment Options</Title>
-                <Text size="md" fw={500} className={classes.para}>Choose from multiple payment options for convenience and flexibility. Whether you prefer credit cards, bank transfers, or digital wallets, we've got you covered!
+                <Text size="md" fw={500} className={classes.para}>Choose from multiple payment options for convenience and flexibility. Whether you prefer credit cards, bank transfers, or digital wallets, we&apos;ve got you covered!
                 </Text>
 
             </Grid.Col>
