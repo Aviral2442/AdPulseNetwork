@@ -1,5 +1,5 @@
 'use client'
-import { Button, Container, Flex, Grid, Paper, Text, Title } from '@mantine/core';
+import { Button, Container, Flex, Grid, Image, Paper, Text, Title } from '@mantine/core';
 import React from 'react';
 import classes from './features.module.css';
 import { IconHandClick } from '@tabler/icons-react';
@@ -26,8 +26,8 @@ const Features = () => {
                 <Grid grow gutter="lg">
                     <Grid.Col span={4} className={classes.boxes} >
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"cpc.png"} alt='cpc' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12} className={font.className}>CPC (Cost Per Click)</Title>
@@ -36,8 +36,8 @@ const Features = () => {
 
                     <Grid.Col span={4} className={classes.boxes}>
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"directpublishers.png"} alt='directpublishers' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12} >Traffic From Direct Publishers</Title>
@@ -47,8 +47,8 @@ const Features = () => {
 
                     <Grid.Col span={4} className={classes.boxes}>
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"Advancedtargeting.png"} alt='Advancedtargeting' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12} >Advanced Targeting</Title>
@@ -63,8 +63,8 @@ const Features = () => {
                 <Grid grow gutter="lg">
                     <Grid.Col span={4} className={classes.boxes} >
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"Noblockedimpressions.png"} alt='Noblockedimpressions' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" className={font.className} py={12} >No Blocked Impressions</Title>
@@ -74,8 +74,8 @@ const Features = () => {
 
                     <Grid.Col span={4} className={classes.boxes}>
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"Realtimedetailedstatistics.png"} alt='Realtimedetailedstatistics' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12}>Real-Time Detailed Statistics</Title>
@@ -85,8 +85,8 @@ const Features = () => {
 
                     <Grid.Col span={4} className={classes.boxes}>
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"cpm.png"} alt='cpm' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12} >CPM (Cost Per Mille)</Title>
@@ -101,8 +101,8 @@ const Features = () => {
                 <Grid grow gutter="lg">
                     <Grid.Col span={4} className={classes.boxes} >
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"SelfServiceforadvertisers.png"} alt='SelfServiceforadvertisers' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12} className={font.className}>Self-Service For Advertisers</Title>
@@ -112,8 +112,8 @@ const Features = () => {
 
                     <Grid.Col span={4} className={classes.boxes}>
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"24_7Support.png"} alt='24_7Support' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12}>24/7 Qualified Support</Title>
@@ -123,8 +123,8 @@ const Features = () => {
 
                     <Grid.Col span={4} className={classes.boxes}>
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"customsolutionsforpartners.png"} alt='customsolutionsforpartners' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12} >Custom Solutions For Partners</Title>
@@ -139,8 +139,8 @@ const Features = () => {
                 <Grid grow gutter="lg">
                     <Grid.Col span={4} className={classes.boxes} >
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"Ownadserversolution.png"} alt='Ownadserversolution' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12} className={font.className}>Own Adserver Solution</Title>
@@ -150,8 +150,8 @@ const Features = () => {
 
                     <Grid.Col span={4} className={classes.boxes}>
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"Adnetworksrotation.png"} alt='Adnetworksrotation' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12}>Ad Networks Rotation</Title>
@@ -161,8 +161,8 @@ const Features = () => {
 
                     <Grid.Col span={4} className={classes.boxes}>
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"MultiplePaymentOptions.png"} alt='MultiplePaymentOptions' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12} >Multiple Payment Options</Title>

@@ -88,8 +88,8 @@ const Navbar = () => {
   return (
     <>
       <TopHeader />
-      <Box  p={15}  >
-        <Container size="xl" bg={"#fff"} p={4}  className={classes.MainHeader} >
+      <Box p={15}  >
+        <Container size="xl" bg={"#fff"} p={4} className={classes.MainHeader} >
           <header className={classes.header}>
             <Group justify="space-around" h="100%">
               <Image src="logo.png" alt="adpulsenetwork" />
@@ -195,7 +195,6 @@ const Navbar = () => {
                     </Menu.Item>
                   </Menu.Dropdown>
                 </Menu>
-                {/* <Button > <IconCalendarMonth size={18} /> &nbsp; Scheduled call</Button> */}
                 <Link href="/scheduled-call" >
                   <div className={classes.container}>
                     <button className={clsx(classes.button, fonts.className)}>Scheduled call</button>
@@ -206,8 +205,8 @@ const Navbar = () => {
               <Burger
                 opened={drawerOpened}
                 onClick={toggleDrawer}
-                hiddenFrom="sm"
-              />
+                hiddenFrom="lg"
+              />  
             </Group>
           </header>
         </Container>
