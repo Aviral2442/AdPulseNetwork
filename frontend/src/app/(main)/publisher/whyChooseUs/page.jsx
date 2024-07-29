@@ -1,5 +1,5 @@
 'use client'
-import { Button, Container, Flex, Grid, Paper, Text, Title } from '@mantine/core';
+import { Button, Container, Flex, Grid, Image, Paper, Text, Title } from '@mantine/core';
 import React from 'react';
 import classes from './whychoose.module.css';
 import { IconHandClick } from '@tabler/icons-react';
@@ -9,171 +9,96 @@ const font = Sora({ subsets: ['latin'], weight: ['300', '400', '500', '600', '70
 const fonts = Manrope({ subsets: ['latin'], weight: ['200', '300', '400', '500'] });
 
 const WhyChooseUs = () => {
-  return (
-    <Container fluid className={classes.container} >
+    return (
+        <Container fluid className={classes.container} >
 
-    <Paper className={classes.paper}>
-        <Text py={5} size="xs" >/ AD NETWORK FEATURES /</Text>
-    </Paper>
+            {/* <Paper className={classes.paper}>
+                <Text py={5} size="xs" >/ AD NETWORK FEATURES /</Text>
+            </Paper> */}
 
-    <Paper className={classes.topHeading}>
-        <Title py={18} fw={400} order={1} className={font.className}>Why choose us</Title>
-        <Text fw={300} order={1} className={font.className}>Choose Ad Pulse Network for Unparalleled Performance and Exceptional Results for All Advertising Verticals.</Text>
-    </Paper>
+            <Paper className={classes.topHeading}>
+                <Title py={38} ta={"center"} fw={400} order={1} className={font.className}>Why Choose AD PULSE NETWORK as the Top Choice for Publishers?</Title>
+                {/* <Text fw={300} order={1} className={font.className}>Why Choose AD PULSE NETWORK as the Top Choice for Publishers?</Text> */}
+            </Paper>
 
-    <Paper className={classes.paper} py={15}>
-        <Grid grow gutter="lg">
-            <Grid.Col span={4} className={classes.boxes} >
-                <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                    <Container p={10} fw={100} >
-                        <IconHandClick />
-                    </Container>
-                </Paper>
-                <Title order={3} fw={500} c="black" py={12} className={font.className}>CPC (Cost Per Click)</Title>
-                <Text size="md" fw={500} className={classes.para} >CPC (Cost Per Click) is an online advertising model where advertisers pay each time a user clicks on their ad.</Text>
-            </Grid.Col>
+            <Paper className={classes.paper} py={15}>
+                <Grid grow gutter="lg">
+                    <Grid.Col span={4} className={classes.boxes} >
+                        <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
+                            <Container p={2} >
+                                <Image src={"100Coverage.png"} alt='100Coverage' />
+                            </Container>
+                        </Paper>
+                        <Title order={3} fw={500} c="black" py={12} className={font.className}>100% Coverage</Title>
+                        <Text size="md" fw={500} className={classes.para} >We provide comprehensive coverage for both desktop and mobile traffic worldwide, ensuring publishers a steady stream of revenue.</Text>
+                    </Grid.Col>
 
-            <Grid.Col span={4} className={classes.boxes}>
-                <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                    <Container p={10} fw={100} >
-                        <IconHandClick />
-                    </Container>
-                </Paper>
-                <Title order={3} fw={500} c="black" py={12} >Traffic From Direct Publishers</Title>
-                <Text size="md" fw={500} className={classes.para}>Traffic from direct publishers refers to the visits originating directly from sites that publish your content, driving targeted and relevant audience to your platform.</Text>
+                    <Grid.Col span={4} className={classes.boxes}>
+                        <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
+                            <Container p={2} >
+                                <Image src={"RevenueOptimization.png"} alt='RevenueOptimization' />
+                            </Container>
+                        </Paper>
+                        <Title order={3} fw={500} c="black" py={12} >Revenue Optimization</Title>
+                        <Text size="md" fw={500} className={classes.para}>Boost your earnings across both desktop and mobile traffic with programmatic ad optimization technology.
+                        </Text>
 
-            </Grid.Col>
+                    </Grid.Col>
 
-            <Grid.Col span={4} className={classes.boxes}>
-                <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                    <Container p={10} fw={100} >
-                        <IconHandClick />
-                    </Container>
-                </Paper>
-                <Title order={3} fw={500} c="black" py={12} >Advanced Targeting</Title>
-                <Text size="md" fw={500} className={classes.para}>Advanced targeting leverages data and technology to precisely reach specific audiences, enhancing marketing efficiency and effectiveness for better results.</Text>
+                    <Grid.Col span={4} className={classes.boxes}>
+                        <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
+                            <Container p={2} >
+                                <Image src={"EasyAdCode.png"} alt='EasyAdCode' />
+                            </Container>
+                        </Paper>
+                        <Title order={3} fw={500} c="black" py={12} >Easy Ad Code
+                        </Title>
+                        <Text size="md" fw={500} className={classes.para}>Maximize your revenue on both desktop and mobile platforms using programmatic ad optimization technology.</Text>
 
-            </Grid.Col>
-        </Grid>
-    </Paper>
-
-
-    <Paper className={classes.paper} py={15}>
-        <Grid grow gutter="lg">
-            <Grid.Col span={4} className={classes.boxes} >
-                <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                    <Container p={10} fw={100} >
-                        <IconHandClick />
-                    </Container>
-                </Paper>
-                <Title order={3} fw={500} c="black" className={font.className} py={12} >No Blocked Impressions</Title>
-                <Text size="md" fw={500} className={classes.para} >Ensure your ads reach their full potential with uninterrupted visibility, maximizing audience engagement and campaign success.</Text>
-
-            </Grid.Col>
-
-            <Grid.Col span={4} className={classes.boxes}>
-                <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                    <Container p={10} fw={100} >
-                        <IconHandClick />
-                    </Container>
-                </Paper>
-                <Title order={3} fw={500} c="black" py={12}>Real-Time Detailed Statistics</Title>
-                <Text size="md" fw={500} className={classes.para}>Real-time detailed statistics offer up-to-the-minute data analysis, providing accurate insights and trends for informed decision-making and performance tracking.</Text>
-
-            </Grid.Col>
-
-            <Grid.Col span={4} className={classes.boxes}>
-                <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                    <Container p={10} fw={100} >
-                        <IconHandClick />
-                    </Container>
-                </Paper>
-                <Title order={3} fw={500} c="black" py={12} >CPM (Cost Per Mille)</Title>
-                <Text size="md" fw={500} className={classes.para}>CPM (Cost Per Mille) is an advertising metric that denotes the cost of 1,000 ad impressions. It helps advertisers gauge ad cost efficiency.</Text>
-
-            </Grid.Col>
-        </Grid>
-    </Paper>
+                    </Grid.Col>
+                </Grid>
+            </Paper>
 
 
-    <Paper className={classes.paper} py={15}>
-        <Grid grow gutter="lg">
-            <Grid.Col span={4} className={classes.boxes} >
-                <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                    <Container p={10} fw={100} >
-                        <IconHandClick />
-                    </Container>
-                </Paper>
-                <Title order={3} fw={500} c="black" py={12} className={font.className}>Self-Service For Advertisers</Title>
-                <Text size="md" fw={500} className={classes.para} >Empower advertisers with self-service tools to create, manage, and optimize campaigns efficiently, ensuring control and flexibility at their fingertips.</Text>
+            <Paper className={classes.paper} py={15}>
+                <Grid grow gutter="lg">
+                    <Grid.Col span={4} className={classes.boxes} >
+                        <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
+                            <Container p={2} >
+                                <Image src={"MonetizeAllTraffic.png"} alt='MonetizeAllTraffic' />
+                            </Container>
+                        </Paper>
+                        <Title order={3} fw={500} c="black" className={font.className} py={12} >Monetize All Traffic</Title>
+                        <Text size="md" fw={500} className={classes.para} >Our platform generates revenue from a diverse range of high-quality, authentic traffic from nearly every corner of the globe.</Text>
 
-            </Grid.Col>
+                    </Grid.Col>
 
-            <Grid.Col span={4} className={classes.boxes}>
-                <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                    <Container p={10} fw={100} >
-                        <IconHandClick />
-                    </Container>
-                </Paper>
-                <Title order={3} fw={500} c="black" py={12}>24/7 Qualified Support</Title>
-                <Text size="md" fw={500} className={classes.para}>Our 24/7 qualified support team is always here for you, ensuring expert assistance anytime you need it.</Text>
+                    <Grid.Col span={4} className={classes.boxes}>
+                        <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
+                            <Container p={2} >
+                                <Image src={"SafeAds.png"} alt='SafeAds' />
+                            </Container>
+                        </Paper>
+                        <Title order={3} fw={500} c="black" py={12}>Safe Ads</Title>
+                        <Text size="md" fw={500} className={classes.para}>Ad Pulse Network reviews all ads before displaying them on your websites to ensure your safety and data security.</Text>
 
-            </Grid.Col>
+                    </Grid.Col>
 
-            <Grid.Col span={4} className={classes.boxes}>
-                <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                    <Container p={10} fw={100} >
-                        <IconHandClick />
-                    </Container>
-                </Paper>
-                <Title order={3} fw={500} c="black" py={12} >Custom Solutions For Partners</Title>
-                <Text size="md" fw={500} className={classes.para}>Tailored partnerships thrive with our custom solutions, crafted to exceed expectations and drive mutual success. Discover innovation together.</Text>
+                    <Grid.Col span={4} className={classes.boxes}>
+                        <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
+                            <Container p={2} >
+                                <Image src={"HighestPayingAds.png"} alt='HighestPayingAds' />
+                            </Container>
+                        </Paper>
+                        <Title order={3} fw={500} c="black" py={12} >Highest Paying Ads</Title>
+                        <Text size="md" fw={500} className={classes.para}>Ad Pulse Network helps publishers obtain the highest-paying ads for their targeted locations and niches.</Text>
 
-            </Grid.Col>
-        </Grid>
-    </Paper>
+                    </Grid.Col>
+                </Grid>
+            </Paper>
 
-
-    <Paper className={classes.paper} py={15}>
-        <Grid grow gutter="lg">
-            <Grid.Col span={4} className={classes.boxes} >
-                <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                    <Container p={10} fw={100} >
-                        <IconHandClick />
-                    </Container>
-                </Paper>
-                <Title order={3} fw={500} c="black" py={12} className={font.className}>Own Adserver Solution</Title>
-                <Text size="md" fw={500} className={classes.para} >Get full control over your ad campaigns with our custom ad server solution. Maximize efficiency and revenue with tailored analytics and targeting options.</Text>
-
-            </Grid.Col>
-
-            <Grid.Col span={4} className={classes.boxes}>
-                <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                    <Container p={10} fw={100} >
-                        <IconHandClick />
-                    </Container>
-                </Paper>
-                <Title order={3} fw={500} c="black" py={12}>Ad Networks Rotation</Title>
-                <Text size="md" fw={500} className={classes.para}>Ad networks rotation optimizes digital ad performance by alternating between multiple networks, maximizing reach and effectiveness for advertisers.</Text>
-
-            </Grid.Col>
-
-            <Grid.Col span={4} className={classes.boxes}>
-                <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                    <Container p={10} fw={100} >
-                        <IconHandClick />
-                    </Container>
-                </Paper>
-                <Title order={3} fw={500} c="black" py={12} >Multiple Payment Options</Title>
-                <Text size="md" fw={500} className={classes.para}>Choose from multiple payment options for convenience and flexibility. Whether you prefer credit cards, bank transfers, or digital wallets, we&apos;ve got you covered!
-                </Text>
-
-            </Grid.Col>
-        </Grid>
-    </Paper>
-
-</Container>
-  )
+        </Container>
+    )
 }
 
 export default WhyChooseUs

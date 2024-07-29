@@ -1,5 +1,5 @@
 'use client'
-import { Container, Grid, Paper, Text, Title } from '@mantine/core';
+import { Container, Grid, Image, Paper, Text, Title } from '@mantine/core';
 import React from 'react';
 import classes from './monetiseOnline.module.css';
 import { IconHandClick } from '@tabler/icons-react';
@@ -24,24 +24,7 @@ const MonetiseOnline = () => {
       <Paper className={classes.paper} py={15}>
         <Grid grow gutter="lg">
           <Grid.Col span={4} className={classes.boxes} >
-            {/* <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-              <Container p={10} fw={100} >
-                <IconHandClick />
-              </Container>
-            </Paper> */}
-            <Title order={3} fw={500} c="black" py={12} className={font.className}>CPC (Cost Per Click)</Title>
-            <Text size="md" fw={500} className={classes.para} >CPC (Cost Per Click) is an online advertising model where advertisers pay each time a user clicks on their ad.</Text>
-          </Grid.Col>
-
-          <Grid.Col span={4} className={classes.boxes}>
-            {/* <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-              <Container p={10} fw={100} >
-                <IconHandClick />
-              </Container>
-            </Paper> */}
-            <Title order={3} fw={500} c="black" py={12} >Traffic From Direct Publishers</Title>
-            <Text size="md" fw={500} className={classes.para}>Traffic from direct publishers refers to the visits originating directly from sites that publish your content, driving targeted and relevant audience to your platform.</Text>
-
+            <Image src="UserExperience.png" alt='UserExperience' />
           </Grid.Col>
 
           <Grid.Col span={4} className={classes.boxes}>

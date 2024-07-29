@@ -6,6 +6,7 @@ import MonetiseOnline from './monetiseOnline/page'
 import TopChoice from './topChoice/page'
 import BecomePublisher from './becomePublisher/page'
 import WhyChooseUs from './whyChooseUs/page'
+import WhyUs from './whyUs/page'
 
 const Publisher = () => {
   return (
@@ -13,9 +14,10 @@ const Publisher = () => {
       <HeroSection  />
       <IconSection  />
       <MonetiseOnline  />
+      <WhyChooseUs  />
       <TopChoice  />
       <BecomePublisher  />
-      <WhyChooseUs  />
+      <WhyUs  />
     </div>
   )
 }
