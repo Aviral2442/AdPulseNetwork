@@ -6,10 +6,11 @@ const IconSection = () => {
     <div>
     <Image
       radius="md"
-      src="iconsSection1.png"
+      src="publishericonbanner.png"
       // h={"30%"}
       mt={5}
-      alt='Icons Section'
+      alt='publishericonbanner'
+      p={16}
     />
   </div>
   )
