@@ -1,5 +1,5 @@
 'use client'
-import { Button, Container, Flex, Grid, Paper, Text, Title } from '@mantine/core';
+import { Button, Container, Flex, Grid, Image, Paper, Text, Title } from '@mantine/core';
 import React from 'react';
 import classes from './whyChooseUs.module.css';
 import { IconHandClick } from '@tabler/icons-react';
@@ -28,8 +28,8 @@ const WhyChooseUs = () => {
                 <Grid grow gutter="lg">
                     <Grid.Col span={4} className={classes.boxes} >
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"AdvancedSecurityOptions.png"} alt='AdvancedSecurityOptions' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12} className={font.className}>Advanced Security Options</Title>
@@ -38,8 +38,8 @@ const WhyChooseUs = () => {
 
                     <Grid.Col span={4} className={classes.boxes}>
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"SelfServiceforadvertisers.png"} alt='SelfServiceforadvertisers' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12} >Self-Serve Platform</Title>
@@ -49,8 +49,8 @@ const WhyChooseUs = () => {
 
                     <Grid.Col span={4} className={classes.boxes}>
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"MultipleAdFormats.png"} alt='MultipleAdFormats' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12} >Multiple Ad Formats</Title>
@@ -65,8 +65,8 @@ const WhyChooseUs = () => {
                 <Grid grow gutter="lg">
                     <Grid.Col span={4} className={classes.boxes} >
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"24_7Support.png"} alt='24_7Support' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" className={font.className} py={12} >24*7 Support</Title>
@@ -76,8 +76,8 @@ const WhyChooseUs = () => {
 
                     <Grid.Col span={4} className={classes.boxes}>
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"MultiplePaymentOptions.png"} alt='MultiplePaymentOptions' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12}>Multiple Payment Options</Title>
@@ -87,8 +87,8 @@ const WhyChooseUs = () => {
 
                     <Grid.Col span={4} className={classes.boxes}>
                         <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                            <Container p={10} fw={100} >
-                                <IconHandClick />
+                            <Container p={2} >
+                                <Image src={"Anti-Adblock.png"} alt='Anti-Adblock' />
                             </Container>
                         </Paper>
                         <Title order={3} fw={500} c="black" py={12} >Anti-Adblock</Title>

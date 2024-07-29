@@ -7,7 +7,7 @@ const HeroSection = () => {
     <div>
       <Image
         radius="md"
-        src="heroBanner.png"
+        src="ADVERTISERHEROBANNER.png"
         // h={"30%"}
         mt={5}
         alt='Hero Banner'

@@ -9,7 +9,7 @@ const RegisterCampion = () => {
         <Container fluid p={60}>
             <Grid gutter={{ base: 5, xs: 'md', md: 'xl', xl: 100 }}>
                 <Grid.Col span={{ base: 12, md: 6, lg: 6 }}>
-                    <Image src="makesDifferent.png" alt="makes different" className={classes.img} />
+                    <Image src="Campaign.png" alt="makes different" className={classes.img} />
                 </Grid.Col>
                 <Grid.Col span={{ base: 12, md: 6, lg: 6 }} className={classes.leftBox}>
                     <Box className={classes.box} >
