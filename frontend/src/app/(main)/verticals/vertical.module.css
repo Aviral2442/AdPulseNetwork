@@ -1,0 +1,28 @@
+.container {
+    padding-top: 10px;
+    padding-left: calc(var(--mantine-spacing-xl) * 2);
+    padding-right: calc(var(--mantine-spacing-xl) * 2);
+    /* background-color: #F0F2F4; */
+    padding-bottom: 30px;
+}
+/* .paper{
+    background-color: #F0F2F4;
+} */
+
+.topHeading{
+    width: 85%;
+
+    @media screen and (max-width: 768px) {
+        width: 100%;
+        padding: 0 10px;
+    }
+}
+
+.para{
+    color: #948e8e;
+    padding-right: 60px;
+}
+
+.icons{
+    border-radius: 28%;
+}
