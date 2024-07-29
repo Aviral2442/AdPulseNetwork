@@ -9,7 +9,7 @@ const HeroSection = () => {
                 src="heroBanner.png"
                 // h={"30%"}
                 mt={5}
-                alt='Hero Banner'
+                alt='Publisher Hero Banner'
             />
         </div>
     )

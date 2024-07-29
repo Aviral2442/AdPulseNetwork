@@ -2,7 +2,6 @@
 import { Button, Container, Flex, Grid, Image, Paper, Text, Title } from '@mantine/core';
 import React from 'react';
 import classes from './whyChooseUs.module.css';
-import { IconHandClick } from '@tabler/icons-react';
 import { Manrope, Sora } from 'next/font/google';
 
 const font = Sora({ subsets: ['latin'], weight: ['300', '400', '500', '600', '700'] });
