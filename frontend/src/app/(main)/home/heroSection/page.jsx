@@ -1,18 +1,23 @@
 'use client'
-import { Image } from '@mantine/core'
+import { Image, Container } from '@mantine/core'
 import React from 'react'
 
 const HeroSection = () => {
   return (
-    <div>
+    <Container size="xxl">
       <Image
         radius="md"
         src="heroBanner.png"
-        // h={"30%"}
-        mt={5}
-        alt='Hero Banner'
+        alt="Hero Banner"
+        sx={(theme) => ({
+          width: '100%',
+          maxHeight: '45vh',
+          [theme.fn.smallerThan('sm')]: {
+            maxHeight: '30vh',
+          },
+        })}
       />
-    </div>
+    </Container>
   )
 }
 
