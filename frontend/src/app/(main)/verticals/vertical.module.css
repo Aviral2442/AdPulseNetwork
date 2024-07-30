@@ -9,14 +9,14 @@
     background-color: #F0F2F4;
 } */
 
-.topHeading{
+/* .topHeading{
     width: 85%;
 
     @media screen and (max-width: 768px) {
         width: 100%;
         padding: 0 10px;
     }
-}
+} */
 
 .para{
     color: #948e8e;

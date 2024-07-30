@@ -15,13 +15,12 @@ const Verticals = () => {
 
       <Container fluid className={classes.container} >
 
-        <Paper className={classes.paper}>
+        {/* <Paper className={classes.paper}>
           <Text py={5} size="xs" >/ AD NETWORK FEATURES /</Text>
-        </Paper>
+        </Paper> */}
 
         <Paper className={classes.topHeading}>
-          <Title py={18} fw={400} order={1} className={font.className}>Connect with potential customers instantly when they search for your product. Boost your visibility
-            and reach with targeted advertising.
+          <Title py={50} ta={'center'} fw={400} order={1} className={font.className}>We Cater to All Top Advertising Verticals
           </Title>
         </Paper>
 
@@ -30,32 +29,33 @@ const Verticals = () => {
             <Grid.Col span={4} className={classes.boxes} >
               <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
                 <Container p={2} >
-                  <Image src={"cpc.png"} alt='cpc' />
+                  <Image src={"CryptoAdvertising.png"} alt='CryptoAdvertising' />
                 </Container>
               </Paper>
-              <Title order={3} fw={500} c="black" py={12} className={font.className}>CPC (Cost Per Click)</Title>
-              <Text size="md" fw={500} className={classes.para} >CPC (Cost Per Click) is an online advertising model where advertisers pay each time a user clicks on their ad.</Text>
+              <Title order={3} fw={500} c="black" py={12} className={font.className}>Crypto Advertising
+              </Title>
+              <Text size="md" fw={500} className={classes.para} >Ad Pulse Network, the leading pay-per-click ad network, helps crypto businesses thrive with its cutting-edge advertising solutions. Choosing us as your publishing partner can transform your website or blog, converting your traffic into real cash effortlessly.</Text>
             </Grid.Col>
 
             <Grid.Col span={4} className={classes.boxes}>
               <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
                 <Container p={2} >
-                  <Image src={"directpublishers.png"} alt='directpublishers' />
+                  <Image src={"HealthCareAdvertising.png"} alt='HealthCareAdvertising' />
                 </Container>
               </Paper>
-              <Title order={3} fw={500} c="black" py={12} >Traffic From Direct Publishers</Title>
-              <Text size="md" fw={500} className={classes.para}>Traffic from direct publishers refers to the visits originating directly from sites that publish your content, driving targeted and relevant audience to your platform.</Text>
+              <Title order={3} fw={500} c="black" py={12} >HealthCare Advertising</Title>
+              <Text size="md" fw={500} className={classes.para}>We make it easy to advertise healthcare products and medical equipment on our global ad network, helping businesses grow significantly. Publishers with traffic in the healthcare or pharma category can easily join Ad Pulse Network to monetize their traffic and earn real money.</Text>
 
             </Grid.Col>
 
             <Grid.Col span={4} className={classes.boxes}>
               <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
                 <Container p={2} >
-                  <Image src={"Advancedtargeting.png"} alt='Advancedtargeting' />
+                  <Image src={"DatingAdvertising.png"} alt='DatingAdvertising' />
                 </Container>
               </Paper>
-              <Title order={3} fw={500} c="black" py={12} >Advanced Targeting</Title>
-              <Text size="md" fw={500} className={classes.para}>Advanced targeting leverages data and technology to precisely reach specific audiences, enhancing marketing efficiency and effectiveness for better results.</Text>
+              <Title order={3} fw={500} c="black" py={12} >Dating Advertising</Title>
+              <Text size="md" fw={500} className={classes.para}>Online dating has become the new normal and a trendy business. Tap into the potential of dating advertising with Ad Pulse Network in this rapidly growing sector. Our cutting-edge ad formats, competitive bids, and global network help dating publishers maximize their earnings.</Text>
 
             </Grid.Col>
           </Grid>
@@ -67,33 +67,33 @@ const Verticals = () => {
             <Grid.Col span={4} className={classes.boxes} >
               <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
                 <Container p={2} >
-                  <Image src={"Noblockedimpressions.png"} alt='Noblockedimpressions' />
+                  <Image src={"GamblingAdvertising.png"} alt='GamblingAdvertising' />
                 </Container>
               </Paper>
-              <Title order={3} fw={500} c="black" className={font.className} py={12} >No Blocked Impressions</Title>
-              <Text size="md" fw={500} className={classes.para} >Ensure your ads reach their full potential with uninterrupted visibility, maximizing audience engagement and campaign success.</Text>
+              <Title order={3} fw={500} c="black" className={font.className} py={12} >Gambling Advertising</Title>
+              <Text size="md" fw={500} className={classes.para} >Reach avid players worldwide with Ad Pulse Network's targeted gambling advertising solutions. Whether it's online casinos, sports betting, or gambling apps, our diverse ad formats ensure maximum engagement. Join us today to elevate your gambling business to new heights!</Text>
 
             </Grid.Col>
 
             <Grid.Col span={4} className={classes.boxes}>
               <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
                 <Container p={2} >
-                  <Image src={"Realtimedetailedstatistics.png"} alt='Realtimedetailedstatistics' />
+                  <Image src={"MediaAdvertising.png"} alt='MediaAdvertising' />
                 </Container>
               </Paper>
-              <Title order={3} fw={500} c="black" py={12}>Real-Time Detailed Statistics</Title>
-              <Text size="md" fw={500} className={classes.para}>Real-time detailed statistics offer up-to-the-minute data analysis, providing accurate insights and trends for informed decision-making and performance tracking.</Text>
+              <Title order={3} fw={500} c="black" py={12}>Media Advertising</Title>
+              <Text size="md" fw={500} className={classes.para}>Ad Pulse Network stands out as a premier ad network specializing in tailored advertising solutions for media and entertainment industries. Our array includes banner, native, and push ads, recognized for delivering exceptional results to advertisers and publishers alike. We prioritize monetizing media traffic to optimize revenue streams.</Text>
 
             </Grid.Col>
 
             <Grid.Col span={4} className={classes.boxes}>
               <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
                 <Container p={2} >
-                  <Image src={"cpm.png"} alt='cpm' />
+                  <Image src={"iGamingAdvertising.png"} alt='iGamingAdvertising' />
                 </Container>
               </Paper>
-              <Title order={3} fw={500} c="black" py={12} >CPM (Cost Per Mille)</Title>
-              <Text size="md" fw={500} className={classes.para}>CPM (Cost Per Mille) is an advertising metric that denotes the cost of 1,000 ad impressions. It helps advertisers gauge ad cost efficiency.</Text>
+              <Title order={3} fw={500} c="black" py={12} >iGaming Advertising</Title>
+              <Text size="md" fw={500} className={classes.para}>At Pulse Network empowers iGaming businesses to achieve new heights. Opting for our ad network can be a game-changer for publishers with virtual gaming traffic. Advertising your Gambling, Sports Betting, and Casino websites on At Pulse Network is straightforward and seamless.</Text>
 
             </Grid.Col>
           </Grid>
@@ -105,72 +105,33 @@ const Verticals = () => {
             <Grid.Col span={4} className={classes.boxes} >
               <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
                 <Container p={2} >
-                  <Image src={"SelfServiceforadvertisers.png"} alt='SelfServiceforadvertisers' />
+                  <Image src={"FinanceAdvertising.png"} alt='FinanceAdvertising' />
                 </Container>
               </Paper>
-              <Title order={3} fw={500} c="black" py={12} className={font.className}>Self-Service For Advertisers</Title>
-              <Text size="md" fw={500} className={classes.para} >Empower advertisers with self-service tools to create, manage, and optimize campaigns efficiently, ensuring control and flexibility at their fingertips.</Text>
+              <Title order={3} fw={500} c="black" py={12} className={font.className}>Finance Advertising</Title>
+              <Text size="md" fw={500} className={classes.para} >Ad Pulse Network enables you to reach a vast audience with your financial services. Our finance ads are ideal for publishers focusing on business and finance content. In summary, our platform is a haven for both publishers and advertisers in the finance industry.</Text>
 
             </Grid.Col>
 
             <Grid.Col span={4} className={classes.boxes}>
               <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
                 <Container p={2} >
-                  <Image src={"24_7Support.png"} alt='24_7Support' />
+                  <Image src={"AdultAdvertising.png"} alt='AdultAdvertising' />
                 </Container>
               </Paper>
-              <Title order={3} fw={500} c="black" py={12}>24/7 Qualified Support</Title>
-              <Text size="md" fw={500} className={classes.para}>Our 24/7 qualified support team is always here for you, ensuring expert assistance anytime you need it.</Text>
+              <Title order={3} fw={500} c="black" py={12}>Adult Advertising</Title>
+              <Text size="md" fw={500} className={classes.para}>Tap into the evergreen demand for adult content with Ad Pulse Network to connect effectively with your target audience. Promote your Adult Dating, Adult Nutra, Adult Games, and other related websites on Ad Pulse Network today to achieve impactful results. Our platform also caters to publishers in the 18+ category.</Text>
 
             </Grid.Col>
 
             <Grid.Col span={4} className={classes.boxes}>
               <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
                 <Container p={2} >
-                  <Image src={"customsolutionsforpartners.png"} alt='customsolutionsforpartners' />
+                  <Image src={"ITServicesAdvertising.png"} alt='ITServicesAdvertising' />
                 </Container>
               </Paper>
-              <Title order={3} fw={500} c="black" py={12} >Custom Solutions For Partners</Title>
-              <Text size="md" fw={500} className={classes.para}>Tailored partnerships thrive with our custom solutions, crafted to exceed expectations and drive mutual success. Discover innovation together.</Text>
-
-            </Grid.Col>
-          </Grid>
-        </Paper>
-
-
-        <Paper className={classes.paper} py={15}>
-          <Grid grow gutter="lg">
-            <Grid.Col span={4} className={classes.boxes} >
-              <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                <Container p={2} >
-                  <Image src={"Ownadserversolution.png"} alt='Ownadserversolution' />
-                </Container>
-              </Paper>
-              <Title order={3} fw={500} c="black" py={12} className={font.className}>Own Adserver Solution</Title>
-              <Text size="md" fw={500} className={classes.para} >Get full control over your ad campaigns with our custom ad server solution. Maximize efficiency and revenue with tailored analytics and targeting options.</Text>
-
-            </Grid.Col>
-
-            <Grid.Col span={4} className={classes.boxes}>
-              <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                <Container p={2} >
-                  <Image src={"Adnetworksrotation.png"} alt='Adnetworksrotation' />
-                </Container>
-              </Paper>
-              <Title order={3} fw={500} c="black" py={12}>Ad Networks Rotation</Title>
-              <Text size="md" fw={500} className={classes.para}>Ad networks rotation optimizes digital ad performance by alternating between multiple networks, maximizing reach and effectiveness for advertisers.</Text>
-
-            </Grid.Col>
-
-            <Grid.Col span={4} className={classes.boxes}>
-              <Paper p={5} bg={"#F0F2F4"} className={classes.icons} w={55} h={55} >
-                <Container p={2} >
-                  <Image src={"MultiplePaymentOptions.png"} alt='MultiplePaymentOptions' />
-                </Container>
-              </Paper>
-              <Title order={3} fw={500} c="black" py={12} >Multiple Payment Options</Title>
-              <Text size="md" fw={500} className={classes.para}>Choose from multiple payment options for convenience and flexibility. Whether you prefer credit cards, bank transfers, or digital wallets, we&apos;ve got you covered!
-              </Text>
+              <Title order={3} fw={500} c="black" py={12} >IT Services Advertising</Title>
+              <Text size="md" fw={500} className={classes.para}>Ad Pulse Network offers a powerful platform to promote your IT Services to a broad audience. Our ads cater to businesses leveraging online technology across various sectors. Becoming an IT publisher with Ad Pulse Network can also prove advantageous for traffic generators in this field.</Text>
 
             </Grid.Col>
           </Grid>
