@@ -7,7 +7,7 @@ const KnowMore = () => {
     <Container fluid p={10} >
       <div>
         <SimpleGrid
-          cols={{ base: 1, sm: 2, lg: 3 }}
+          cols={{ base: 1, sm: 3, lg: 3 }}
           p={40}
         >
           <div>
