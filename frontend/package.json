@@ -2,12 +2,12 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "type": "module"
+    "lint": "next lint"
   },
   "dependencies": {
     "@mantine/carousel": "^7.11.1",
